@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+
+}
+
+.main {
+    background-image: url("Assets/netflix_background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2000px, 100vw);
+    height: 95vh;
+    position: relative;
+    /* display:flex; */
+    /* flex-direction: column; */
+
+}
+
+.main .box {
+    height: 95vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    top: 0;
+    position: absolute;
+}
+
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 180px;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 0px 7px 4px 21px;
+    position: relative;
+    z-index: 10;
+    gap: 3px;
+}
+
+.t1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.t2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.t3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media screen and (max-width : 960px) {
+    .main {
+        height: 80vh;
+    }
+
+    .main .box {
+        height: 80vh;
+    }
+
+
+
+}
+
+.seperation {
+    height: 11px;
+    background-color: rgb(245, 90, 90);
+
+}
+
+.btn {
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    font-size: medium;
+    border: 1px solid rgba(160, 158, 158, 0.7);
+
+}
+
+.btn-redsm {
+    background-color: red;
+    color: white;
+    border: rgba(23, 23, 23, 0.7);
+
+
+}
+
+.btn-red {
+    font-size: larger;
+    background-color: red;
+    color: white;
+    padding: 11px 35px;
+    border-radius: 4px;
+    border: rgba(23, 23, 23, 0.7);
+}
+
+.main input {
+    font-size: medium;
+    padding: 10px 25px;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    ;
+    font-weight: bold;
+    border: 1px solid rgba(160, 158, 158, 0.7);
+
+
+}
+
+.sec1 {
+    display: flex;
+    justify-content: flex-start;
+
+    color: white;
+    padding-left: 60px;
+    padding-top: 30px;
+    position: relative;
+    font-size: larger;
+
+}
+
+.movies {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-y: visible;
+    overflow-x: scroll;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    height: 400px;
+    scroll-snap-type: x mandatory;
+    scroll-margin-inline-start: 2.75rem;
+
+
+}
+
+ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    margin: 12px;
+    position: relative;
+
+    height: 300px;
+    border-radius: 12px;
+
+}
+
+.boxes {
+    display: flex;
+    position: absolute;
+    height: 210px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    padding: 30px
+}
+
+.sec2 {
+
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.number {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    position: absolute;
+
+}
+
+.recom {}
+
+img {
+    border-radius: 12px;
+    height: 300px;
+    width: 200px;
+}
+
+
+.sec3 {
+    display: flex;
+    justify-content: flex-start;
+
+    color: white;
+    padding: 20px;
+    padding-left: 80px;
+
+    position: relative;
+    font-size: larger;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    width: 80vw;
+    gap: 10px;
+
+}
+
+.fbox {
+    position: relative;
+    margin-bottom: 30px;
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 33vh;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+
+}
+
+.sec4 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.fbox h2 {
+    font-size: 300;
+}
+
+.feat {
+    font-size: large;
+
+}
+
+@media screen and (max-width:1280px) {
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fbox {
+        width: 36vw;
+        height: 28vh;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .features {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .fbox {
+        width: 78vw;
+        height: 25vh;
+    }
+}
+
+.faq h2 {
+    text-align: start;
+
+}
+
+.faq {
+    color: white;
+    background-color: black;
+
+
+
+}
+
+.qbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(32, 30, 30);
+    padding: 34px;
+    color: white;
+    width: 78vw;
+    height: 3vh;
+    margin: 5px;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.qs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.sec5 {
+
+    display: flex;
+    justify-content: center;
+}
+
+.sec6 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+}
+
+.submit {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 14px;
+}
+
+.subbutton {
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.start {
+    color: white;
+    font-size: x-large;
+    background-color: red;
+
+    border-radius: 8px;
+    position: relative;
+    z-index: 10px;
+    padding: 5px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.subbutton input {
+    font-size: larger;
+    background-color: transparent;
+    height: 60px;
+    border-radius: 8px;
+    padding: 10px;
+    width: 50vw;
+    font-weight: bold;
+    border: 1px solid rgba(160, 158, 158, 0.7);
+}
+
+.svgi {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    position: relative;
+    padding-top: 40px;
+
+}
+
+.fbox .svgi {}
